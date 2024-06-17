@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#check{
+    display: none;
+}
+.main_box{
+    background: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one i{
+    color: white;
+    position: absolute;
+    left:10px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    top: -5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu{
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0px 0px 6px rgba(255,255,255,0.5);
+    height: 100vh;
+    width: 40vh;
+    position: relative;
+    left: -300px;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 25px;
+    line-height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 260px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo a{
+    padding-top: 5px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    left: 45px;
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+    height: 50px;
+    box-shadow: 0px 0px 6px rgba(255,255,255,0.3);
+}
+.sidebar_menu .menu{
+    position: absolute;
+    top: 80px;
+    color: white;
+    width: 40vh;
+}
+.sidebar_menu .menu a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.sidebar_menu .menu li{
+    margin: 4px 0px;
+    padding: 20px;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .social_media{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+.sidebar_menu .social_media i{
+    font-size: 25px;
+    padding: 0px 5px;
+    color: rgba(255,255,255,0.4);
+    transition: all 0.3s linear;
+}
+.btn_one i:hover{
+    font-size: 32px;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0px 0px 6px rgba(255,255,255,0.3);
+}
+.sidebar_menu .btn_two i:hover{
+    font-size: 28px;
+}
+.sidebar_menu .social_media i:hover{
+    color: white;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
